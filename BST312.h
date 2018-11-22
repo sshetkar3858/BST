@@ -432,7 +432,7 @@ bool BST_312 <ItemType>::isItemInTree(const ItemType& item)
     if(current->data == item)
       found = true;
     else {
-      if(current->data < item)
+      if(item < current->data)
         current = current->left;
       else
         current = current->right;
